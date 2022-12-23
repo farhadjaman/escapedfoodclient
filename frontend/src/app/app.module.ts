@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/pages/home/home.component';
+import { RatingModule } from 'ng-starrating';
+import { SearchComponent } from './components/partials/search/search.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -18,6 +20,7 @@ import { HomeComponent } from './components/pages/home/home.component';
     MatButtonModule,
     MatIconModule,
     BrowserAnimationsModule,
+    RatingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
