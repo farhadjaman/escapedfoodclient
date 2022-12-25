@@ -3,6 +3,8 @@ dotenv.config();
 import path from 'path';
 import express from 'express';
 import cors from 'cors';
+import { dbConnect } from './configs/database.config';
+dbConnect();
 
 const app = express();
 app.use(express.json());
@@ -14,7 +16,7 @@ app.use(
 );
 
 app.use(express.static('public'));
-app.get('*', (req: any, res: any) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
