@@ -20,6 +20,7 @@ import { LoginPageComponent } from './components/pages/loginPage/login-page.comp
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { RegisterPageComponent } from './components/pages/registerPage/register-page.component';
+import { CheckoutPageComponent } from './components/pages/checkoutPage/checkout-page.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { RegisterPageComponent } from './components/pages/registerPage/register-
     NotFoundComponent,
     LoginPageComponent,
     RegisterPageComponent,
+    CheckoutPageComponent,
   ],
   imports: [
     BrowserModule,

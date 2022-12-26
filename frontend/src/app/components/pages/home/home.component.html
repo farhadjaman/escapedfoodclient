@@ -19,7 +19,7 @@
     class="opacity-[0.9] rounded-md text-[#e72929] hover:cursor-pointer overflow-hidden w-[15rem] h-auto"
     *ngFor="let food of foods"
   >
-    <a routerLink="/food/{{ food.id }}">
+    <a routerLink="/foods/{{ food.id }}">
       <img [src]="food.imageUrl" [alt]="food.name" class="object-covers" />
       <div class="mt-[0.3rem] py-[0.5] px-[0.5rem] relative">
         <div class="name">
