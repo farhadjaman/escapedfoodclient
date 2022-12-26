@@ -3,21 +3,41 @@
   class="mat-elevation-z8"
   style="
     background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-    height: 82px;
   "
 >
   <div class="flex justify-between align-middle w-full grow">
-    <div>
+    <div routerLink="/" class="hover:cursor-pointer">
       <img
         class="w-[72px] object-contain mx-8"
         src="./../../../../assets/images/logo/logo-white.png"
         alt="logo"
       />
     </div>
-    <span>
-      <a mat-button>Login</a>
-      <a mat-button>User profile</a>
-      <a mat-raised-button color="white">cart</a>
-    </span>
+    <div class="flex h-full justify-center align-middle my-auto">
+      <span
+        ><a mat-button class="text-lg" *ngIf="!isAuth" routerLink="/login"
+          >Login</a
+        ></span
+      >
+      <span
+        ><a mat-button class="text-lg" *ngIf="isAuth">{{ user.name }}</a></span
+      >
+      <span
+        ><a
+          mat-button
+          class="text-lg"
+          *ngIf="isAuth"
+          routerLink="/logout"
+          (click)="logout()"
+          >Logout</a
+        ></span
+      >
+      <span><a mat-button class="text-lg" routerLink="/">Menu</a></span>
+      <span
+        ><a mat-button class="text-lg text-gray-600 bg-white" routerLink="/cart"
+          >cart <span class="text-orange-500">0</span></a
+        ></span
+      >
+    </div>
   </div>
 </mat-toolbar>

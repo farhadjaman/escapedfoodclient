@@ -155,7 +155,7 @@
     "symbol-observable" "4.0.0"
     "yargs" "17.6.2"
 
-"@angular/common@^14.0.0 || ^15.0.0", "@angular/common@^15.0.0", "@angular/common@^9.0.1", "@angular/common@15.0.4":
+"@angular/common@^14.0.0 || ^15.0.0", "@angular/common@^15.0.0", "@angular/common@^9.0.1", "@angular/common@>=14.0.0-0", "@angular/common@15.0.4":
   "integrity" "sha512-0x/2IhaetJqfXMeQ4DlRnOTzGWD0OvOeKORyi0q7WXPxSoD9MUezQHGmzkc5lK9tDYE9cNYyQfkUBcbJT/k6MA=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-15.0.4.tgz"
   "version" "15.0.4"
@@ -185,7 +185,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^14.0.0 || ^15.0.0", "@angular/core@^15.0.0", "@angular/core@^9.0.1", "@angular/core@15.0.4":
+"@angular/core@^14.0.0 || ^15.0.0", "@angular/core@^15.0.0", "@angular/core@^9.0.1", "@angular/core@>=14.0.0-0", "@angular/core@15.0.4":
   "integrity" "sha512-Xf8Nuu0iM/VjQHPS4A0jufqTYZCfiGqc0iAD7j9zM3TD6caQ3OP4mxXVYYTpIG+APKel38+Gol8cpQB/8PVbqQ=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-15.0.4.tgz"
   "version" "15.0.4"
@@ -213,7 +213,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/platform-browser@^14.0.0 || ^15.0.0", "@angular/platform-browser@^15.0.0", "@angular/platform-browser@15.0.4":
+"@angular/platform-browser@^14.0.0 || ^15.0.0", "@angular/platform-browser@^15.0.0", "@angular/platform-browser@>=14.0.0-0", "@angular/platform-browser@15.0.4":
   "integrity" "sha512-SOLrzh9AsHzhfre95ShvHd0hBcyEcFftJuAaU+35L4GiOAY+CznFuJUq4LjITCMQDHGzdpUlRjoUyJRQFmlvXQ=="
   "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-15.0.4.tgz"
   "version" "15.0.4"
@@ -4251,6 +4251,13 @@
   "integrity" "sha512-RQO9B/EVYHvu4oG8ZAR0sr91d1ouuyr4dzQDa4g1Bgi0tr4Ow6VGJKxrqhu2n8MgdLuaCWGvp9dhXWL1qxTw7Q=="
   "resolved" "https://registry.npmjs.org/ng-starrating/-/ng-starrating-1.0.20.tgz"
   "version" "1.0.20"
+
+"ngx-toastr@^16.0.1":
+  "integrity" "sha512-GpGPQcNqB2m2i5yhH73CkGV6D6DlCJ0+aXZvUoR7OMxlJTlM+73FUePVYUnpWUHXR2IVMS+1ce8WwcTXJzGJxA=="
+  "resolved" "https://registry.npmjs.org/ngx-toastr/-/ngx-toastr-16.0.1.tgz"
+  "version" "16.0.1"
+  dependencies:
+    "tslib" "^2.3.0"
 
 "node-forge@^1":
   "integrity" "sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA=="

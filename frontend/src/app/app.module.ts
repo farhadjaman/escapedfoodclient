@@ -18,6 +18,8 @@ import { NotFoundComponent } from './components/partials/notFound/not-found.comp
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageComponent } from './components/pages/loginPage/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { RegisterPageComponent } from './components/pages/registerPage/register-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     TitleComponent,
     NotFoundComponent,
     LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     RatingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
