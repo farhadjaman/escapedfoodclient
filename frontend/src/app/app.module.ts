@@ -22,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { RegisterPageComponent } from './components/pages/registerPage/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkoutPage/checkout-page.component';
 import { OrderItemsListComponent } from './components/partials/orderItemsList/order-items-list.component';
+import { MapComponent } from './components/partials/map/map.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { OrderItemsListComponent } from './components/partials/orderItemsList/or
     RegisterPageComponent,
     CheckoutPageComponent,
     OrderItemsListComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

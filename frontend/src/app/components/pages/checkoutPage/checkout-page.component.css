@@ -41,7 +41,7 @@ button {
   font-size: 1.3rem;
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 2px 2px grey;
+  box-shadow: 1px 0.5px 1px 1px grey;
 }
 
 button:hover {
