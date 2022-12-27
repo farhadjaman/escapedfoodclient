@@ -28,11 +28,14 @@ export class LoginPageComponent implements OnInit {
 
     this.returnUrl = this.activatedRoute.snapshot.queryParams.returnUrl;
   }
+
   get fc() {
     return this.loginForm.controls;
   }
+
   submit() {
     this.isSubmitted = true;
+
     if (this.loginForm.invalid) return;
     this.userService
       .login({

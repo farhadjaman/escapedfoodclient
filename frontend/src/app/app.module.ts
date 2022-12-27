@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { RegisterPageComponent } from './components/pages/registerPage/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkoutPage/checkout-page.component';
+import { OrderItemsListComponent } from './components/partials/orderItemsList/order-items-list.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CheckoutPageComponent } from './components/pages/checkoutPage/checkout-
     LoginPageComponent,
     RegisterPageComponent,
     CheckoutPageComponent,
+    OrderItemsListComponent,
   ],
   imports: [
     BrowserModule,

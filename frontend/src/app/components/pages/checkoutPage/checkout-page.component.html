@@ -1,1 +1,46 @@
-<p>checkout-page works!</p>
+<div class="container flex justify-center">
+  <div class="content">
+    <app-title title="Order Form" fontSize="1.6rem"></app-title>
+    <form [formGroup]="checkoutForm">
+      <div>
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900"
+          >Your Name</label
+        >
+        <input
+          type="email"
+          name="name"
+          class="bg-gray-50 border border-red-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+          placeholder="name@company.com"
+          required="required"
+          formControlName="name"
+        />
+      </div>
+      <div>
+        <label
+          for="address"
+          class="block mb-2 text-sm font-medium text-gray-900"
+          >Password</label
+        >
+        <input
+          type="text"
+          name="address"
+          placeholder="••••••••"
+          class="bg-gray-50 border border-red-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+          required="required"
+          formControlName="address"
+        />
+      </div>
+    </form>
+    <order-items-list [order]="order"></order-items-list>
+    <!-- <order-items-list formControlName="order"></order-items-list> -->
+  </div>
+  <div class="map">
+    <app-title title="Choose Your Address On Map" fontSize="1.6rem"></app-title>
+    <map formControlName="order"></map>
+  </div>
+  <div class="buttons-container">
+    <div class="buttons">
+      <button (click)="createOrder()">Go To Payment</button>
+    </div>
+  </div>
+</div>

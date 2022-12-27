@@ -1,0 +1,32 @@
+<div class="py-8">
+  <div class="w-full r text-2xl font-medium text-red-400">Your Order List</div>
+  <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-md text-left text-gray-500">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+          <th scope="col" class="py-3 px-6">Food Image</th>
+          <th scope="col" class="py-3 px-6">Name</th>
+          <th scope="col" class="py-3 px-6">Quantity</th>
+          <th scope="col" class="py-3 px-6">Price</th>
+          <th scope="col" class="py-3 px-6">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of order.items">
+          <th
+            scope="row"
+            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+          >
+            <a routerLink="/food/{{ item.food.id }}">
+              <img [src]="item.food.imageUrl" />
+            </a>
+          </th>
+          <td class="py-4 px-6">{{ item.food.name }}</td>
+          <td class="py-4 px-6">{{ item.food.price | currency }}</td>
+          <td class="py-4 px-6">{{ item.quantity }}</td>
+          <td class="py-4 px-6">{{ item.price | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
